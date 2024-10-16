@@ -22,65 +22,6 @@
 </head>
 
 <body>
-<script src="http://niuini.com/assets/js/jquery.min-1.13.js"></script>
-<div id="wrap">
-
-    <!-- navbar -->
-<div class="navbar navbar-default navbar-static-top" role="navigation">
-    <div class="container">
-        <!-- 头部 -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-3">
-                <span class="sr-only">切换导航</span>
-            </button>
-            <a class="navbar-brand" href="/">NIUINI</a>
-        </div>
-
-        <!-- 响应式内容 -->
-        <div class="collapse navbar-collapse" id="navbar-collapse-3">
-
-            <!-- 固定部分 -->
-            <ul class="nav navbar-nav">
-                <li><a class="about" href=" http://niuini.com/list/project">在线播放</a></li>
-                <li><a class="about" href=" http://niuini.com/list/model">模型</a></li>
-                <li><a class="about" href=" http://niuini.com/list/motion">动作</a></li>
-                <li><a class="about" href=" http://niuini.com/list/camera">镜头</a></li>
-                <li><a class="about" href=" http://niuini.com/list/audio">音频</a></li>
-
-                <li  class="dropdown">
-                    <a  class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cloud-upload"></i> 上传<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="http://niuini.com/user/center/model/create">上传模型</a></li>
-                        <li><a href="http://niuini.com/user/center/motion/create">上传动作</a></li>
-                        <li><a href="http://niuini.com/user/center/camera/create">上传镜头</a></li>
-                        <li><a href="http://niuini.com/user/center/audio/create">上传背景音乐</a></li>
-                        <li class="divider"></li>
-                        <li><a href="http://niuini.com/user/center/project/create">创建播放项目</a></li>
-                    </ul>
-                </li>
-            </ul>
-
-            <!-- 搜索 -->
-            <form class="navbar-form navbar-left" action="#" role="search">
-                <div class="form-group">
-                    <div class="input-group">
-                        <input class="form-control" id="navbarInput-01" type="search" placeholder="搜索">
-                        <span class="input-group-btn">
-                          <button type="submit" class="btn"><span class="fui-search"></span></button>
-                        </span>
-                    </div>
-                </div>
-            </form>
-
-            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="http://niuini.com/user/login">登录</a></li>
-                <li><a href="http://niuini.com/user/register">注册</a></li>
-                            </ul>
-        </div>
-        <!-- /.响应式内容 -->
-
-    </div>
-</div>
         
         <div class="container">
 
@@ -424,100 +365,36 @@
 
 
     
-        
-    
-    
     <script src="http://niuini.com/assets/js/carousel.js"></script>
-    <script src="http://niuini.com/ext/threejs/Three.js"></script>
-    <script src="http://niuini.com/ext/threejs/dat.gui_modify.js"></script>
+    <script src="js/threejs/Three.js"></script>
+    <script src="js/threejs/dat.gui_modify.js"></script>
 
-    <script src="http://niuini.com/ext/threejs/OrbitControls.js"></script>
+    <script src="js/threejs/OrbitControls.js"></script>
 
-    <script src="http://niuini.com/ext/threejs/mmdPlay/libs/mmdparser.min.js"></script>
-    <script src="http://niuini.com/ext/threejs/mmdPlay/libs/ammo.js"></script>
-    <script src="http://niuini.com/ext/threejs/mmdPlay/libs/Detector.js"></script>
+    <script src="js/threejs/mmdPlay/libs/mmdparser.min.js"></script>
+    <script src="js/threejs/mmdPlay/libs/ammo.js"></script>
+    <script src="js/threejs/mmdPlay/libs/Detector.js"></script>
 
-    <script src="http://niuini.com/ext/threejs/mmdPlay/loaders/TGALoader.js"></script>
-    <script src="http://niuini.com/ext/threejs/mmdPlay/loaders/MMDLoader.js"></script>
+    <script src="js/threejs/mmdPlay/loaders/TGALoader.js"></script>
+    <script src="js/threejs/mmdPlay/loaders/MMDLoader.js"></script>
 
-    <script src="http://niuini.com/ext/threejs/mmdPlay/effects/OutlineEffect.js"></script>
+    <script src="js/threejs/mmdPlay/effects/OutlineEffect.js"></script>
 
-    <script src="http://niuini.com/ext/threejs/mmdPlay/animation/CCDIKSolver.js"></script>
-    <script src="http://niuini.com/ext/threejs/mmdPlay/animation/MMDPhysics.js"></script>
+    <script src="js/threejs/mmdPlay/animation/CCDIKSolver.js"></script>
+    <script src="js/threejs/mmdPlay/animation/MMDPhysics.js"></script>
 
-    <script src="http://niuini.com/ext/threejs/mmdPlay/Mirror/Mirror.js"></script>
-    <script src="http://niuini.com/ext/threejs/mmdPlay/SkyShader/SkyShader.js"></script>
-    <script src="http://niuini.com/ext/threejs/mmdPlay/jq/jquery.mousewheel.min.js"></script>
+    <script src="js/threejs/mmdPlay/Mirror/Mirror.js"></script>
+    <script src="js/threejs/mmdPlay/SkyShader/SkyShader.js"></script>
+    <script src="js/threejs/mmdPlay/jq/jquery.mousewheel.min.js"></script>
 
-    <script src="http://niuini.com/ext/threejs/project/control.js"></script>
+    <script src="js/threejs/project/control.js"></script>
     <script>
         var modelFile =    "http://file.niuini.com/model/10/Tda式 洛天依·三月雨常服.pmx";
         var motionFiles = ["http://file.niuini.com/motion/201904202121169044.vmd"];
         var cameraFiles = ["http://file.niuini.com/camera/201904202121539841.vmd"];
         var audioFile =    "http://file.niuini.com/audio/201904202132351044.mp3";
     </script>
-    <script src="http://niuini.com/ext/threejs/project/main.js"></script>
-    <script>
-        $('#comment_text').bind('input propertychange',function () {
-            $('#comment_num').html(800-$(this).val().length);
-        });
-        function addComment(){
-            if($('#comment_text').val().length>0) {
-                $.post('http://niuini.com/comment', {
-                    '_token': 'pab7QSiKqn1Z0vHurPHry1PilipJuFuAjlnzhDSK',
-                    'project_id': '5',
-                    'content': $('#comment_text').val()
-                }, function (data) {
-                    if (data.statue) {//发表成功
-                        layer.msg(data.msg, {icon: 6});
-                        $('#comment_text').val('');
-                        showComment();
-                    } else {
-                        layer.msg(data.msg, {icon: 5});
-                    }
-                });
-            }else{
-                layer.msg('请填写内容', {icon: 5});
-            }
-
-        }
-
-        function showComment() {
-            $.get('http://niuini.com/comment/5',{
-                '_token':'pab7QSiKqn1Z0vHurPHry1PilipJuFuAjlnzhDSK',
-                'type':'project',
-            },function (data) {
-                if(data){//发表成功
-                    $('#comment_list').html(data);
-                }else {
-                    layer.msg('获取评论列表错误', {icon: 5});
-                }
-            });
-        }
-
-        function deleteComment(comment_id){
-            $.post('http://niuini.com/comment/'+comment_id,{'_method':'delete','_token':'pab7QSiKqn1Z0vHurPHry1PilipJuFuAjlnzhDSK'},function (data) {
-                if(data.statue){//删除成功
-                    layer.msg(data.msg, {icon: 6});
-                    showComment();
-                }else {
-                    layer.msg(data.msg, {icon: 5});
-                }
-            });
-        }
-        showComment();
-
-    </script>
-
-    <script>
-        $(function () {
-            $('[data-toggle=tooltip]').tooltip();
-        });
-        function shareUrl(){
-            layer.alert('复制该链接 <input style="width:100%" value="http://niuini.com/project/5" />');
-        }
-    </script>
-
+    <script src="js/threejs/project/main.js"></script>
 
 
 
